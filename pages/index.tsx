@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 
-import Card from '../styleguide/components/Card'
+import Card from '@styleguide/components/Card'
 
 const Home = () => (
   <div>
