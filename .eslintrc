@@ -1,0 +1,75 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "commonjs": true,
+    "jest": true
+  },
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "rules": {
+    "arrow-body-style": 0,
+    "class-methods-use-this": 0,
+    "comma-dangle": 0,
+    "dot-notation": 0,
+    "import/extensions": 0,
+    "import/first": 0,
+    "linebreak-style": 0,
+    "import/no-named-default": 0,
+    "import/no-unresolved": 0,
+    "jsx-a11y/img-has-alt": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "jsx-a11y/label-has-for": [2, {
+      "required": {
+        "some": ["nesting", "id"]
+      }
+    }],
+    "max-len": ["error", {
+      "code": 220,
+      "ignoreComments": true,
+      "ignoreUrls": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true,
+      "ignoreRegExpLiterals": true
+    }],
+    "no-alert": 0,
+    "no-mixed-operators": ["error",
+      {
+        "groups": [
+          ["+", "-", "*", "/", "%", "**"],
+          ["&", "|", "^", "~", "<<", ">>", ">>>"],
+          ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
+          ["&&", "||"],
+          ["in", "instanceof"]
+        ],
+        "allowSamePrecedence": true
+      }
+    ],
+    "no-shadow": 0,
+    "no-throw-literal": 0,
+    "no-underscore-dangle": 0,
+    "no-use-before-define": 0,
+    "padded-blocks": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-boolean-value": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-tag-spacing": 0,
+    "react/no-array-index-key": 0,
+    "react/require-default-props": 0,
+    "react/sort-comp": 0,
+    "strict": 0
+  },
+  "plugins": [
+    "jsx-a11y",
+    "react"
+  ],
+  "globals": {
+    "localStorage": true,
+    "document": true,
+    "__DEV__": true,
+    "fetch": true
+  }
+}
