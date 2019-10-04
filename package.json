@@ -6,7 +6,9 @@
     "dev": "next dev -p 1234",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint .",
+    "lint:js": "eslint .",
+    "lint:css": "stylelint './src/**/*.js'",
+    "lint": "yarn lint:css & yarn lint:js",
     "lint:staged": "eslint --ignore-path .eslintignore",
     "test": "TZ=America/Sao_Paulo jest",
     "test:watch": "yarn test --collectCoverage=no --watch"
@@ -24,6 +26,10 @@
     "babel-plugin-styled-components": "^1.10.6",
     "husky": "^3.0.5",
     "lint-staged": "^9.2.5",
+    "stylelint": "^11.0.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.8.0",
     "typescript": "^3.6.2"
   },
   "husky": {
